@@ -16,9 +16,11 @@
 
 Every skill follows this structure. Deviations require explicit justification.
 
+**Naming convention:** every skill is namespaced `s4ag-`. The package directory is `packages/s4ag-<domain>/` and the frontmatter `name:` is `s4ag-<domain>`, invoked as `/s4ag-<domain>`. The bare `s4ag` package is the router that points users to the right starting skill. All cross-references between skills use the `/s4ag-<domain>` form.
+
 ```markdown
 ---
-name: <skill-name>
+name: s4ag-<skill-name>
 description: "<Trigger description — when to invoke this skill. Include natural-language phrases a user might say. Keep under 200 chars.>"
 allowed-tools: [Read]
 ---
@@ -26,6 +28,8 @@ allowed-tools: [Read]
 # <Skill Title>
 
 <Opening paragraph: 2–4 sentences. States the goal of the skill and the core principle it operates from. No bullet points. Written in second person ("your farm", "you"). Sets the tone — practical and direct.>
+
+**How this skill works:** <One short paragraph stating the two cross-cutting conventions: each sub-tool pauses at a **Checkpoint** to confirm its key assumptions before producing output, and ends with **Next steps** recommending related skills. Customise the named assumptions to the domain. Note any emergency exception where the answer comes before the checkpoint.>
 
 ---
 
@@ -59,10 +63,19 @@ allowed-tools: [Read]
 
 *<One line: what this sub-tool does.>*
 
-<Content: structured, actionable, direct. Use tables where they help. Use decision sequences where there is a clear order of operations. Always end with an Output section showing what a good response from this sub-tool looks like — either a template or an example.>
+<Content: structured, actionable, direct. Use tables where they help. Use decision sequences where there is a clear order of operations.>
+
+**Checkpoint — confirm before finalising:**
+- <2–4 assumptions this sub-tool would otherwise guess — climate, system type, organic/conventional, urgency, budget, the user's actual goal.>
+
+<One line stating the consequence of getting these wrong, instructing a stop-and-confirm with the user before producing output.>
 
 **Output:**
 <Template or example of the skill's output — what the user receives at the end of this sub-tool.>
+
+**Next steps:**
+- <Related skill (`/s4ag-<domain>`) or internal sub-tool to run next, with a one-line reason.>
+- <Repeat for 2–3 follow-ups. Distinguish internal sub-tools ("within this skill") from other skills (`/s4ag-...`).>
 
 ---
 
@@ -84,6 +97,9 @@ Run this after writing each skill. Every box must be checked before committing.
 - [ ] **Context-sensitive delivery:** Does the skill lead with the practical answer before the ecological framing? Would a conventional farmer in a hurry get what they need in the first 20% of the skill?
 - [ ] **Expert Lineage present:** Are 3–6 thinkers documented with specific contributions, not just names?
 - [ ] **Output templates present:** Does every sub-tool end with a concrete output template?
+- [ ] **HITL checkpoints present:** Does the opening explain the Checkpoint convention, and does every sub-tool include a Checkpoint that validates its key assumptions before producing output? Is the emergency exception noted where relevant?
+- [ ] **Next steps present:** Does every sub-tool end with Next steps recommending related skills (`/s4ag-<domain>`) and/or internal sub-tools, each with a one-line reason?
+- [ ] **Naming convention:** Is the package `packages/s4ag-<domain>/`, the frontmatter `name: s4ag-<domain>`, and every cross-reference in `/s4ag-<domain>` form?
 - [ ] **No TBDs or placeholders:** Every section has real content.
 
 ---
