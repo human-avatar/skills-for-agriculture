@@ -1,0 +1,10 @@
+# Dev / CI
+.github/
+.git/
+.gitignore
+.claude/
+hooks/
+CLAUDE.md
+
+# Docs (not needed at runtime — users can read them on GitHub)
+docs/

@@ -1,0 +1,42 @@
+{
+  "name": "@human-avatar/skills-for-agriculture",
+  "version": "1.0.0",
+  "description": "Decision-making and guidance skills for farmers, growers, and land stewards — covering regenerative agriculture, soil health, water, livestock, pests, and more.",
+  "keywords": [
+    "claude-code",
+    "claude-code-plugin",
+    "agriculture",
+    "farming",
+    "regenerative-agriculture",
+    "permaculture",
+    "soil-health",
+    "livestock",
+    "market-garden",
+    "agroforestry",
+    "thinking-tools",
+    "decision-making",
+    "ai-tools"
+  ],
+  "homepage": "https://github.com/human-avatar/skills-for-agriculture",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/human-avatar/skills-for-agriculture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/human-avatar/skills-for-agriculture/issues"
+  },
+  "license": "MIT",
+  "author": "Finn Fitzsimons <finn.fitzsimons@printify.com>",
+  "bin": {
+    "skills-for-agriculture": "./bin/install.js"
+  },
+  "files": [
+    "packages/",
+    "bin/",
+    "README.md",
+    ".claude-plugin/"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

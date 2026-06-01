@@ -1,8 +1,20 @@
 {
   "name": "skills-for-agriculture",
-  "description": "Decision-making and guidance skills for farmers, growers, and land stewards — covering regenerative agriculture, permaculture, soil health, water, livestock, and more.",
+  "description": "Decision-making and guidance skills for farmers, growers, and land stewards — covering regenerative agriculture, soil health, water, livestock, pests, seasons, and more. Each skill is an invokable command that applies a structured framework to farm decisions.",
+  "version": "1.0.0",
   "author": {
     "name": "Finn Fitzsimons",
     "email": "finn.fitzsimons@printify.com"
-  }
+  },
+  "repository": "https://github.com/human-avatar/skills-for-agriculture",
+  "license": "MIT",
+  "keywords": [
+    "agriculture",
+    "farming",
+    "regenerative-agriculture",
+    "permaculture",
+    "soil-health",
+    "livestock",
+    "market-garden"
+  ]
 }
