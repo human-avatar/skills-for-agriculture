@@ -26,12 +26,12 @@
     "url": "https://github.com/human-avatar/skills-for-agriculture/issues"
   },
   "license": "MIT",
-  "author": "Finn Fitzsimons <finn.fitzsimons@printify.com>",
+  "author": "Finn Fitzsimons <fitzsimons.finn@gmail.com>",
   "bin": {
     "skills-for-agriculture": "./bin/install.js"
   },
   "files": [
-    "packages/",
+    "skills/",
     "bin/",
     "README.md",
     ".claude-plugin/"

@@ -5,7 +5,7 @@ Decision-making and guidance skills for farmers, growers, and land stewards. Eac
 ## Structure
 
 ```
-packages/
+skills/
   s4ag/               ← router, invoked as /s4ag
   s4ag-{domain}/      ← individual skill, invoked as /s4ag-{domain}
     SKILL.md
@@ -18,8 +18,8 @@ docs/
 
 ## Naming convention
 
-- **Router:** `packages/s4ag/SKILL.md` → invoked as `/s4ag`
-- **Domain skills:** `packages/s4ag-{domain}/SKILL.md` → invoked as `/s4ag-{domain}`
+- **Router:** `skills/s4ag/SKILL.md` → invoked as `/s4ag`
+- **Domain skills:** `skills/s4ag-{domain}/SKILL.md` → invoked as `/s4ag-{domain}`
 
 The folder name IS the command name.
 
